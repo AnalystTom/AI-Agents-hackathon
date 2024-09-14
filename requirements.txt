@@ -1,0 +1,5 @@
+mysql-connector-python
+crewai 
+crewai_tools 
+langchain_community 
+pandas
