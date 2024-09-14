@@ -7,7 +7,7 @@ from product_search_tool import ProductSearchTool
 import pandas as pd
 
 # Load product data
-product_data = pd.read_csv('ai-agents/products.csv')
+product_data = pd.read_csv('ai/products.csv')
 
 # Preprocess the data to match expected column names
 product_data.rename(columns={
