@@ -1,0 +1,146 @@
+.bot-page {
+    background-color: #333333;
+}
+
+.userMessage {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    width: fit-content;
+    color: white;
+    background: #2f2f2f;
+    padding: 12px 1px 12px 30px;
+}
+
+.output {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: fit-content;
+    color: white;
+    background: #2f2f2f;
+    padding: 12px 1px 12px 30px;
+}
+
+
+p#userInput ,p.output {
+    color: white;
+    display: block;
+    width: 90%;
+    font-size: 20px;
+}
+
+
+// uiverse input area
+
+.container-fluid.chatContaienr {
+    height: 400px;
+    overflow: scroll;
+}
+
+.send-img {
+    width: 30px;
+}
+
+.send-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #40414F;
+    border: 1px solid #2E2F3A;
+    border-radius: 7px;
+    height: 66px;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 36px;
+    left: 10%;
+    padding: 0px 13px;
+    color: white;
+    font-size: 23px;
+}
+
+.send {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: absolute;
+    bottom: 54px;
+    right: 11%;
+}
+
+
+.send-icon {
+    width: 33px;
+}
+
+.send-input::placeholder {
+    color: #828E9E;
+    font-size:  15px;
+}
+
+
+// Mic and animation
+
+.mic-animation {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.mic-animation-listening {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #ffffff;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #ff0000;
+    }
+    100% {
+        transform: scale(1);
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+// Product card
+
+.product-card {
+    color: white;
+    width: 100%;
+    min-height: max-content;
+    background: #2f2f2f;
+    padding: 27px;
+    border-radius: 10px;
+    img{
+        width: -webkit-fill-available;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:551px) {
+    .userMessage {
+        padding: 10px;
+    }
+    
+    .output {
+        padding: 10px;
+    }
+    .send{
+        right: 15%;
+    }
+}

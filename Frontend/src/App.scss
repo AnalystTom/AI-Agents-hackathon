@@ -1,0 +1,27 @@
+// -------------- Components --------------
+@import './SCSS/Components/bootstrap';
+@import './SCSS/Components/ScreenLoader';
+@import "./SCSS/Components/ReponseLoader.scss";
+@import "./SCSS/Frontend/botPage";
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex : 1 0 auto;
+}
+
+
+::-webkit-scrollbar{
+    display : none;
+}
+
+footer {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
